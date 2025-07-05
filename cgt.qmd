@@ -1,0 +1,8 @@
+---
+title: "CGT Calculator"
+format: html
+---
+
+Here is the [Capital Gains Tax Calculator](https://nicom2000.shinyapps.io/cgt_calculator/) I made.
+
+Click the link above to launch the live app hosted on **shinyapps.io**.

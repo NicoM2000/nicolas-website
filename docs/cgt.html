@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Australian CGT Calculator – Nicolas Moinard</title>
+<title>CGT Calculator – Nicolas Moinard</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -102,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Certifications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://nicom2000.shinyapps.io/cgt_calculator/"> 
+    <a class="nav-link active" href="./cgt.html" aria-current="page"> 
 <span class="menu-text">CGT Calculator</span></a>
   </li>  
   <li class="nav-item">
@@ -117,23 +116,23 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Australian CGT Calculator</h1>
+<h1 class="title">CGT Calculator</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
   
@@ -145,198 +144,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="{=html}">
-<!-- ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ -->
-<!-- FULL HTML APP BÊN DƯỚI -->
-<h1>
-Australian CGT Calculator
-</h1>
-<h3 class="anchored">
-CGT Calculation Formula
-</h3>
-<p>
-<strong>Capital Gain</strong> = Net Sale Proceeds − Cost Base<br> <strong>Net Sale Proceeds</strong> = Sale Price − Sale Costs<br> <strong>Cost Base</strong> = Purchase Price + Purchase Costs + Capital Improvements<br> <strong>Discounted Gain</strong> = Capital Gain × 50% (if held for more than 12 months)<br> <strong>CGT Payable</strong> = Discounted Gain × Marginal Tax Rate (%)
-</p>
-<div class="container-fluid">
-<!-- INPUT CARD -->
-<div class="row">
-<pre><code>&lt;div class="col-md-4"&gt;
-  &lt;div class="card"&gt;
-    &lt;div class="card-header"&gt;
-      &lt;h5&gt;Input Parameters&lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div class="card-body"&gt;
-      &lt;div class="mb-3"&gt;
-        &lt;label for="purchase_price" class="form-label"&gt;Purchase Price (AUD):&lt;/label&gt;
-        &lt;input type="number" class="form-control" id="purchase_price" value="0" step="0.01"&gt;
-      &lt;/div&gt;
-      &lt;div class="mb-3"&gt;
-        &lt;label for="sale_price" class="form-label"&gt;Sale Price (AUD):&lt;/label&gt;
-        &lt;input type="number" class="form-control" id="sale_price" value="0" step="0.01"&gt;
-      &lt;/div&gt;
-      &lt;div class="mb-3"&gt;
-        &lt;label for="purchase_costs" class="form-label"&gt;Purchase Costs:&lt;/label&gt;
-        &lt;input type="number" class="form-control" id="purchase_costs" value="0" step="0.01"&gt;
-      &lt;/div&gt;
-      &lt;div class="mb-3"&gt;
-        &lt;label for="sale_costs" class="form-label"&gt;Sale Costs:&lt;/label&gt;
-        &lt;input type="number" class="form-control" id="sale_costs" value="0" step="0.01"&gt;
-      &lt;/div&gt;
-      &lt;div class="mb-3"&gt;
-        &lt;label for="capital_improvements" class="form-label"&gt;Capital Improvements:&lt;/label&gt;
-        &lt;input type="number" class="form-control" id="capital_improvements" value="0" step="0.01"&gt;
-      &lt;/div&gt;
-      &lt;div class="mb-3"&gt;
-        &lt;label for="purchase_date" class="form-label"&gt;Purchase Date:&lt;/label&gt;
-        &lt;input type="date" class="form-control" id="purchase_date"&gt;
-      &lt;/div&gt;
-      &lt;div class="mb-3"&gt;
-        &lt;label for="sale_date" class="form-label"&gt;Sale Date:&lt;/label&gt;
-        &lt;input type="date" class="form-control" id="sale_date"&gt;
-      &lt;/div&gt;
-      &lt;div class="mb-3 form-check"&gt;
-        &lt;input type="checkbox" class="form-check-input" id="discount_eligible" checked&gt;
-        &lt;label class="form-check-label" for="discount_eligible"&gt;
-          Held more than 12 months (50% CGT discount applies)
-        &lt;/label&gt;
-      &lt;/div&gt;
-      &lt;div class="mb-3"&gt;
-        &lt;label for="marginal_tax_rate" class="form-label"&gt;Your Marginal Tax Rate (%):&lt;/label&gt;
-        &lt;input type="number" class="form-control" id="marginal_tax_rate" value="37" step="0.1" min="0" max="100"&gt;
-      &lt;/div&gt;
-      &lt;button type="button" class="btn btn-primary" onclick="calculateCGT()"&gt;Calculate CGT&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- RESULT CARD --&gt;
-&lt;div class="col-md-8"&gt;
-  &lt;div class="card"&gt;
-    &lt;div class="card-header"&gt;
-      &lt;h5&gt;CGT Summary&lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div class="card-body"&gt;
-      &lt;div id="result" class="alert alert-info"&gt;
-        Enter your values and click "Calculate CGT" to see the results.
-      &lt;/div&gt;
-      &lt;div id="detailed_results" style="display: none;"&gt;
-        &lt;div class="row"&gt;
-          &lt;div class="col-md-6"&gt;
-            &lt;div class="card bg-light"&gt;
-              &lt;div class="card-body"&gt;
-                &lt;h6 class="card-title"&gt;Cost Base&lt;/h6&gt;
-                &lt;p class="card-text" id="cost_base_display"&gt;$0.00&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class="col-md-6"&gt;
-            &lt;div class="card bg-light"&gt;
-              &lt;div class="card-body"&gt;
-                &lt;h6 class="card-title"&gt;Net Sale Proceeds&lt;/h6&gt;
-                &lt;p class="card-text" id="net_sale_display"&gt;$0.00&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;div class="row mt-3"&gt;
-          &lt;div class="col-md-4"&gt;
-            &lt;div class="card bg-success text-white"&gt;
-              &lt;div class="card-body"&gt;
-                &lt;h6 class="card-title"&gt;Capital Gain&lt;/h6&gt;
-                &lt;p class="card-text" id="capital_gain_display"&gt;$0.00&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class="col-md-4"&gt;
-            &lt;div class="card bg-warning"&gt;
-              &lt;div class="card-body"&gt;
-                &lt;h6 class="card-title"&gt;Discounted Gain&lt;/h6&gt;
-                &lt;p class="card-text" id="discounted_gain_display"&gt;$0.00&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class="col-md-4"&gt;
-            &lt;div class="card bg-danger text-white"&gt;
-              &lt;div class="card-body"&gt;
-                &lt;h6 class="card-title"&gt;CGT Payable&lt;/h6&gt;
-                &lt;p class="card-text" id="cgt_payable_display"&gt;$0.00&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-</div>
-<!-- SCRIPT -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const today = new Date();
-  const twoYearsAgo = new Date();
-  twoYearsAgo.setFullYear(today.getFullYear() - 2);
-  document.getElementById('sale_date').value = today.toISOString().split('T')[0];
-  document.getElementById('purchase_date').value = twoYearsAgo.toISOString().split('T')[0];
-});
-
-function calculateCGT() {
-  const purchasePrice = parseFloat(document.getElementById('purchase_price').value) || 0;
-  const salePrice = parseFloat(document.getElementById('sale_price').value) || 0;
-  const purchaseCosts = parseFloat(document.getElementById('purchase_costs').value) || 0;
-  const saleCosts = parseFloat(document.getElementById('sale_costs').value) || 0;
-  const capitalImprovements = parseFloat(document.getElementById('capital_improvements').value) || 0;
-  const discountEligible = document.getElementById('discount_eligible').checked;
-  const marginalTaxRate = parseFloat(document.getElementById('marginal_tax_rate').value) || 0;
-
-  const costBase = purchasePrice + purchaseCosts + capitalImprovements;
-  const netSale = salePrice - saleCosts;
-  const capitalGain = netSale - costBase;
-
-  const resultElement = document.getElementById('result');
-  const detailedResults = document.getElementById('detailed_results');
-
-  if (capitalGain <= 0) {
-    resultElement.className = 'alert alert-success';
-    resultElement.innerHTML = '<strong>No CGT payable.</strong> You made a capital loss of $' + Math.abs(capitalGain).toFixed(2);
-    detailedResults.style.display = 'none';
-    return;
-  }
-
-  const discount = discountEligible ? 0.5 : 1;
-  const discountedGain = capitalGain * discount;
-  const cgtPayable = discountedGain * (marginalTaxRate / 100);
-
-  resultElement.className = 'alert alert-info';
-  resultElement.innerHTML = `
-    <strong>CGT Calculation Complete</strong><br>
-    Capital Gain: $${capitalGain.toFixed(2)}<br>
-    Discounted Gain: $${discountedGain.toFixed(2)}<br>
-    CGT Payable: $${cgtPayable.toFixed(2)}
-  `;
-
-  document.getElementById('cost_base_display').textContent = '$' + costBase.toFixed(2);
-  document.getElementById('net_sale_display').textContent = '$' + netSale.toFixed(2);
-  document.getElementById('capital_gain_display').textContent = '$' + capitalGain.toFixed(2);
-  document.getElementById('discounted_gain_display').textContent = '$' + discountedGain.toFixed(2);
-  document.getElementById('cgt_payable_display').textContent = '$' + cgtPayable.toFixed(2);
-
-  detailedResults.style.display = 'block';
-}
-</script>
-<!-- CSS -->
-<style>
-.card { margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-.card-header { background-color: #f8f9fa; border-bottom: 1px solid #dee2e6; }
-.form-label { font-weight: 500; }
-.btn-primary { background-color: #007bff; border-color: #007bff; }
-.btn-primary:hover { background-color: #0056b3; border-color: #0056b3; }
-.alert { border-radius: 0.375rem; }
-.card-text { font-size: 1.25rem; font-weight: bold; margin-bottom: 0; }
-</style>
-<!-- ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ ✅ -->
-</div>
+<p>Here is the <a href="https://nicom2000.shinyapps.io/cgt_calculator/">Capital Gains Tax Calculator</a> I made.</p>
+<p>Click the link above to launch the live app hosted on <strong>shinyapps.io</strong>.</p>
 
 
 
