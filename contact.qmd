@@ -1,0 +1,14 @@
+---
+title: Contact
+format: html
+---
+
+# Get in touch!
+
+📧 [nicolas.moinard\@gmail.com](mailto:nicolas.moinard@gmail.com "Write me!")
+
+📱 +61 434 006 507
+
+<a href="https://www.linkedin.com/in/nicolas-m-02409916b" target="_blank"> <i class="fab fa-linkedin fa-2x"></i> </a> Click the icon to connect!
+
+\*Open to Accounting Internships and Graduate opportunities or a good coffee chat about Excel formulas!\* ☕

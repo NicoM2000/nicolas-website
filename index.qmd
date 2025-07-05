@@ -1,0 +1,32 @@
+---
+title: Welcome to my site
+format: html
+---
+
+# Hi, I’m Nicolas Moinard 👋
+
+Welcome to my website! I’m an Accounting student passionate about financial analysis, utilising my Excel magic to clean spreadsheets, and adding value to businesses through numbers.
+
+------------------------------------------------------------------------
+
+## Quick Profile
+
+-   🎓 Bachelor of Business (Accountancy) \@ QUT (mid-2026)
+
+-   🤝 Vice-President – QUT Accountancy Student Association
+
+-   📊 Advanced Excel \| Xero Advisor \| R (basic)
+
+-   🍷 Trained in Luxury Hospitality Management in Switzerland
+
+-   🌏 Trilingual: French, English and Vietnamese
+
+------------------------------------------------------------------------
+
+**What you’ll find here**:
+
+📄 My resume and experience
+
+📊 Projects and Certifications
+
+📬 How to contact me
