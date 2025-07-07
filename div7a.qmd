@@ -1,0 +1,23 @@
+---
+title: "Division 7A Loan Calculator"
+format: html
+---
+
+*Currently under development...*
+
+While you're waiting for the world's most exciting Division 7A Loan Calculator, here's a quick peek behind the scenes:
+
+```{r, echo=FALSE}
+library(knitr)
+kable(
+  data.frame(
+    Date = c("07/07/2025", "07/07/2025", "08/07/2025", "08/07/2025"),
+    Account_Name = c("Work-In-Progress", "Sleep", "Caffeine Expense", "Caffeine Payable"),
+    Account_Code = c("WIP001", "ZZZ999", "CAF101", "CAF999"),
+    Debit = c("xx", "", "xx", ""),
+    Credit = c("", "xx", "", "xx")
+  ),
+  col.names = c("Date", "Account Name", "Account Code", "Dr", "Cr"),
+  caption = "Behind-the-scenes journal entries while building the Division 7A Loan Calculator."
+)
+```

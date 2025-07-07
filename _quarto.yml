@@ -15,6 +15,10 @@ website:
         href: projects.qmd
       - text: "CGT Calculator"
         href: cgt.qmd
+      - text: "Benford's Law Anomaly Detector"
+        href: benford.qmd
+      - text: "Division 7A Loan Calculator"
+        href: div7a.qmd
       - text: "Contact"
         href: contact.qmd
       

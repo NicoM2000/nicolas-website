@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Certifications – Nicolas Moinard</title>
+<title>Benford’s Law Anomaly Detector – Nicolas Moinard</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,8 +66,55 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="site_libs/plotly-binding-4.11.0/plotly.js"></script>
+
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -97,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Certifications</span></a>
   </li>  
   <li class="nav-item">
@@ -105,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CGT Calculator</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./benford.html"> 
+    <a class="nav-link active" href="./benford.html" aria-current="page"> 
 <span class="menu-text">Benford’s Law Anomaly Detector</span></a>
   </li>  
   <li class="nav-item">
@@ -132,16 +179,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#accounting" id="toc-accounting" class="nav-link active" data-scroll-target="#accounting"><u>Accounting</u></a>
-  <ul class="collapse">
-  <li><a href="#grant-thornton-au-job-simulation-in-audit-on-forage" id="toc-grant-thornton-au-job-simulation-in-audit-on-forage" class="nav-link" data-scroll-target="#grant-thornton-au-job-simulation-in-audit-on-forage">Grant Thornton AU Job Simulation in Audit on Forage</a></li>
-  <li><a href="#xero-advisor-and-payroll-certified" id="toc-xero-advisor-and-payroll-certified" class="nav-link" data-scroll-target="#xero-advisor-and-payroll-certified">Xero Advisor and Payroll Certified</a></li>
-  </ul></li>
-  <li><a href="#data-analytics" id="toc-data-analytics" class="nav-link" data-scroll-target="#data-analytics"><u>Data Analytics</u></a>
-  <ul class="collapse">
-  <li><a href="#kpmg-au-data-analytics-job-simulation-on-forage" id="toc-kpmg-au-data-analytics-job-simulation-on-forage" class="nav-link" data-scroll-target="#kpmg-au-data-analytics-job-simulation-on-forage">KPMG AU Data Analytics Job Simulation on Forage</a></li>
-  <li><a href="#google-data-analytics-professional-certificate" id="toc-google-data-analytics-professional-certificate" class="nav-link" data-scroll-target="#google-data-analytics-professional-certificate">Google Data Analytics Professional Certificate</a></li>
-  </ul></li>
+  <li><a href="#what-is-benfords-law" id="toc-what-is-benfords-law" class="nav-link active" data-scroll-target="#what-is-benfords-law">🔍What is Benford’s Law?</a></li>
   </ul>
 </nav>
     </div>
@@ -150,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Certifications</h1>
+<h1 class="title">Benford’s Law Anomaly Detector</h1>
 </div>
 
 
@@ -167,57 +205,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="accounting" class="level1">
-<h1><u>Accounting</u></h1>
-<section id="grant-thornton-au-job-simulation-in-audit-on-forage" class="level2">
-<h2 class="anchored" data-anchor-id="grant-thornton-au-job-simulation-in-audit-on-forage">Grant Thornton AU Job Simulation in Audit on Forage</h2>
+<p>Benford’s Law is often seen as the go-to forensic accounting tool in for fraud detection.</p>
+<p>📈 I built this interactive Shiny app to let users:</p>
 <ul>
-<li><p>Trial Balance Variance Review</p></li>
-<li><p>Payroll Tax &amp; Superannuation Review</p></li>
-<li><p>Variance Commentary</p></li>
-<li><p>Audit Completion and Reporting</p></li>
+<li>Upload their own .csv files (max 500MB)</li>
+<li>Select a numeric column to analyse</li>
+<li>Automatically extract first digits</li>
+<li>Compare the digit distribution to Benford’s expected probabilities</li>
+<li>Flag anomalies using a Chi-squared test (checks whether the difference between predicted results and actual values are statistically significant)</li>
 </ul>
-</section>
-<section id="xero-advisor-and-payroll-certified" class="level2">
-<h2 class="anchored" data-anchor-id="xero-advisor-and-payroll-certified">Xero Advisor and Payroll Certified</h2>
+<p>Here is the <a href="https://nicom2000.shinyapps.io/benford/">Benford’s Law Anomaly Detector</a> I made.</p>
+<p>Click the link above to launch the live app hosted on <strong>shinyapps.io</strong>.</p>
+<hr>
+<section id="what-is-benfords-law" class="level1">
+<h1>🔍What is Benford’s Law?</h1>
+<p>Although the mathematical property was first noted by Simon Newcomb, today’s widely known <strong>Benford’s Law</strong> is a curious statistical principle used in <strong>anomaly detection</strong>. It reveals that in many real-world datasets, small leading digits (i.e.&nbsp;<em>1</em>) are counterintuitively more likely to occur than large digits. This patterns seems to be present in a wide range of cases, ranging from:</p>
 <ul>
-<li><p>Setting up a new or existing business;</p></li>
-<li><p>Track inventory;</p></li>
-<li><p>Generate reports</p></li>
-<li><p>Find and recode postings;</p></li>
-<li><p>Manual journals;</p></li>
-<li><p>Manage fixed assets;</p></li>
-<li><p>Manage and troubleshoot Payroll activities;</p></li>
-<li><p>Xero Projects.</p></li>
+<li><p>🗳️ <strong>election results</strong>,</p></li>
+<li><p>🏡 <strong>street addresses</strong>,</p></li>
+<li><p>📊 <strong>financial data</strong>,</p></li>
+<li><p>⚰️ <strong>mortality stats</strong>,</p></li>
+<li><p>🧪 to <strong>molecular weights</strong>.</p></li>
 </ul>
-</section>
-</section>
-<section id="data-analytics" class="level1">
-<h1><u>Data Analytics</u></h1>
-<section id="kpmg-au-data-analytics-job-simulation-on-forage" class="level2">
-<h2 class="anchored" data-anchor-id="kpmg-au-data-analytics-job-simulation-on-forage">KPMG AU Data Analytics Job Simulation on Forage</h2>
-<ul>
-<li><p>Completed a simulation focused on advising a client on customer targeting;</p></li>
-<li><p>Assessed data quality and completeness in preparation for analysis;</p></li>
-<li><p>Analysed data to target high-value customer demographics and attributes;</p></li>
-<li><p>Developed dashboards to communicate findings with visuals.</p></li>
-</ul>
-</section>
-<section id="google-data-analytics-professional-certificate" class="level2">
-<h2 class="anchored" data-anchor-id="google-data-analytics-professional-certificate">Google Data Analytics Professional Certificate</h2>
-<ul>
-<li><p>Data Analytics Project Management;</p></li>
-<li><p>Data Quality Assessment;</p></li>
-<li><p>Data Cleaning;</p></li>
-<li><p>Data Visualisation;</p></li>
-<li><p>Tableau;</p></li>
-<li><p>SQL (Google BigQuery);</p></li>
-<li><p>R programming;</p></li>
-<li><p>Descriptive Statistics.</p></li>
-</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## 📐 Generalised Benford’s Law: The Formula Behind the Pattern</td>
+</tr>
+<tr class="even">
+<td>The probability that a number begins with digit <span class="math inline">\(d\)</span> (from 1 through 9) is:</td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[
+P(d) = \log_{10} \left(1 + \frac{1}{d} \right)
+\]</span></td>
+</tr>
+<tr class="even">
+<td>Where:</td>
+</tr>
+<tr class="odd">
+<td>- <span class="math inline">\(P(d)\)</span> is the probability that the first digit is <span class="math inline">\(d\)</span> - The logarithm is base-10 - This formula shows why <strong>1</strong> appears about <strong>30.1%</strong> of the time, while <strong>9</strong> only shows up around <strong>4.6%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>📊 Benford’s Law Expected Distribution The plot below shows the probability distribution predicted by Benford’s Law for the first digit (1–9). As you can see, the digit 1 appears ~30% of the time, while 9 appears less than 5%.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-30303a84e9ed92322d48" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-30303a84e9ed92322d48">{"x":{"data":[{"orientation":"v","width":0.89999999999999991,"base":0,"x":[1],"y":[0.3010299956639812],"text":"factor(digit): 1<br />probability: 0.30103000<br />factor(digit): 1","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(8,48,107,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"1","legendgroup":"1","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.90000000000000013,"base":0,"x":[2],"y":[0.17609125905568124],"text":"factor(digit): 2<br />probability: 0.17609126<br />factor(digit): 2","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(8,81,156,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"2","legendgroup":"2","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.90000000000000036,"base":0,"x":[3],"y":[0.12493873660829993],"text":"factor(digit): 3<br />probability: 0.12493874<br />factor(digit): 3","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(33,113,181,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"3","legendgroup":"3","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.90000000000000036,"base":0,"x":[4],"y":[0.09691001300805642],"text":"factor(digit): 4<br />probability: 0.09691001<br />factor(digit): 4","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(66,146,198,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"4","legendgroup":"4","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.90000000000000036,"base":0,"x":[5],"y":[0.079181246047624818],"text":"factor(digit): 5<br />probability: 0.07918125<br />factor(digit): 5","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(107,174,214,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"5","legendgroup":"5","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.90000000000000036,"base":0,"x":[6],"y":[0.066946789630613221],"text":"factor(digit): 6<br />probability: 0.06694679<br />factor(digit): 6","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(158,202,225,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"6","legendgroup":"6","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.90000000000000036,"base":0,"x":[7],"y":[0.057991946977686733],"text":"factor(digit): 7<br />probability: 0.05799195<br />factor(digit): 7","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(191,211,230,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"7","legendgroup":"7","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.89999999999999947,"base":0,"x":[8],"y":[0.051152522447381291],"text":"factor(digit): 8<br />probability: 0.05115252<br />factor(digit): 8","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(175,198,220,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"8","legendgroup":"8","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.89999999999999858,"base":0,"x":[9],"y":[0.045757490560675143],"text":"factor(digit): 9<br />probability: 0.04575749<br />factor(digit): 9","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(158,187,210,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"9","legendgroup":"9","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1],"y":[0.3010299956639812],"text":"30.10%","hovertext":"factor(digit): 1<br />probability: 0.30103000<br />factor(digit): 1<br />label: 30.10%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"1","legendgroup":"1","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2],"y":[0.17609125905568124],"text":"17.61%","hovertext":"factor(digit): 2<br />probability: 0.17609126<br />factor(digit): 2<br />label: 17.61%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"2","legendgroup":"2","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3],"y":[0.12493873660829993],"text":"12.49%","hovertext":"factor(digit): 3<br />probability: 0.12493874<br />factor(digit): 3<br />label: 12.49%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"3","legendgroup":"3","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[4],"y":[0.09691001300805642],"text":"9.69%","hovertext":"factor(digit): 4<br />probability: 0.09691001<br />factor(digit): 4<br />label: 9.69%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"4","legendgroup":"4","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5],"y":[0.079181246047624818],"text":"7.92%","hovertext":"factor(digit): 5<br />probability: 0.07918125<br />factor(digit): 5<br />label: 7.92%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"5","legendgroup":"5","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[6],"y":[0.066946789630613221],"text":"6.69%","hovertext":"factor(digit): 6<br />probability: 0.06694679<br />factor(digit): 6<br />label: 6.69%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"6","legendgroup":"6","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[7],"y":[0.057991946977686733],"text":"5.80%","hovertext":"factor(digit): 7<br />probability: 0.05799195<br />factor(digit): 7<br />label: 5.80%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"7","legendgroup":"7","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[8],"y":[0.051152522447381291],"text":"5.12%","hovertext":"factor(digit): 8<br />probability: 0.05115252<br />factor(digit): 8<br />label: 5.12%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"8","legendgroup":"8","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[9],"y":[0.045757490560675143],"text":"4.58%","hovertext":"factor(digit): 9<br />probability: 0.04575749<br />factor(digit): 9<br />label: 4.58%","textfont":{"size":18.897637795275593,"color":"rgba(255,255,51,1)"},"type":"scatter","mode":"text","hoveron":"points","name":"9","legendgroup":"9","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":51.334163553341632,"r":9.2984640929846396,"b":51.141552511415526,"l":54.860938148609378},"plot_bgcolor":"rgba(34,34,34,1)","paper_bgcolor":"rgba(34,34,34,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":18.596928185969279},"title":{"text":"<b> Benford's Law Probability Distribution <\/b>","font":{"color":"rgba(255,255,255,1)","family":"","size":22.316313823163139},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,9.5999999999999996],"tickmode":"array","ticktext":["1","2","3","4","5","6","7","8","9"],"tickvals":[1,2,3,4,5,6,6.9999999999999991,8,9],"categoryorder":"array","categoryarray":["1","2","3","4","5","6","7","8","9"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":4.6492320464923198,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(221,221,221,1)","family":"","size":14.877542548775427},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(68,68,68,1)","gridwidth":0.8453149175440583,"zeroline":false,"anchor":"y","title":{"text":"Leading Digit","font":{"color":"rgba(255,255,255,1)","family":"","size":18.596928185969279}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,0.33113299523037931],"tickmode":"array","ticktext":["0%","10%","20%","30%"],"tickvals":[0,0.10000000000000002,0.20000000000000004,0.30000000000000004],"categoryorder":"array","categoryarray":["0%","10%","20%","30%"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":4.6492320464923198,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(221,221,221,1)","family":"","size":14.87754254877543},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(68,68,68,1)","gridwidth":0.8453149175440583,"zeroline":false,"anchor":"x","title":{"text":"Probability","font":{"color":"rgba(255,255,255,1)","family":"","size":18.596928185969279}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.877542548775427},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":18.596928185969279}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"91345eeb5bf3":{"x":{},"y":{},"fill":{},"type":"bar"},"913446e272ef":{"x":{},"y":{},"fill":{},"label":{}}},"cur_data":"91345eeb5bf3","visdat":{"91345eeb5bf3":["function (y) ","x"],"913446e272ef":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
