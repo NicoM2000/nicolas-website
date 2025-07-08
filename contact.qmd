@@ -8,36 +8,72 @@ format: html
 Use the form below to send me a message — I'll get back to you as soon as I can.
 
 ```{=html}
-<form action="https://formsubmit.co/nicolas.moinard@gmail.com" method="POST">
+<style>
+  form label,
+  form input,
+  form textarea {
+    color: #111;
+    background-color: #fff;
+  }
 
-  <label for="name">Your Name:</label><br>
-  <input type="text" name="name" required><br><br>
+  @media (prefers-color-scheme: dark) {
+    form label,
+    form input,
+    form textarea {
+      color: #f0f0f0;
+      background-color: #1e1e1e;
+    }
+  }
 
-  <label for="email">Your Email:</label><br>
-  <input type="email" name="email" required><br><br>
+  input, textarea {
+    border: 1px solid #888;
+    padding: 8px;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
-  <label for="message">Your Message:</label><br>
-  <textarea name="message" rows="5" required></textarea><br><br>
+  label {
+    display: block;
+    margin-top: 1em;
+    font-weight: 500;
+  }
+
+  button {
+    background-color: #00bfa5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: #009e88;
+  }
+</style>
+
+<form action="https://formsubmit.co/el/sosili" method="POST">
+  <label for="name">Your Name:</label>
+  <input type="text" name="name" required>
+
+  <label for="email">Your Email:</label>
+  <input type="email" name="email" required>
+
+  <label for="message">Your Message:</label>
+  <textarea name="message" rows="5" required></textarea>
 
   <!-- Anti-spam fields -->
   <input type="text" name="_honey" style="display:none">
   <input type="hidden" name="_captcha" value="true">
-  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+  <input type="hidden" name="_next" value="https://nicom2000.github.io/nicolas-website/">
 
-  <button type="submit" style="
-  background-color:#00bfa5;
-  color:white;
-  padding:10px 20px;
-  border:none;
-  border-radius:5px;
-  cursor:pointer;"
-  onmouseover="this.style.backgroundColor='#009e88'"
-  onmouseout="this.style.backgroundColor='#00bfa5'">
-  Send Message
-</button>
-
-
+  <button type="submit">Send Message</button>
 </form>
+
 ```
 
 ---
