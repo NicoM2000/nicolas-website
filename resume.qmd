@@ -8,10 +8,8 @@ format: html
 **Bachelor of Business \| Accounting**\
 *Queensland University of Technology (QUT), Brisbane*\
 Jul 2024 – Jul 2026 \| International Merit Scholarship
-
 \
 *Courses*: Financial Accounting, Management Accounting, Company Accounting, Taxation, Audit & Assurance, Business Law, Corporations Law, Business Analytics, Fundamentals of Finance.
-
 \
 *Achievements*:\
 - Executive Dean’s Commendation for Academic Excellence (S2 2024, Summer 2024)\
@@ -22,16 +20,15 @@ Jul 2024 – Jul 2026 \| International Merit Scholarship
 **Cert. III, IV & Diploma \| Accounting & Bookkeeping**\
 *TAFE Queensland, Brisbane*\
 Feb 2023 – Jun 2024
-
 \
 *Courses*: Accounting Fundamentals, Bookkeeping, Xero, Excel, Financial & Management Accounting, Financial Analysis, Corporate Accounting, Payroll, HandiTax, BAS, IAS, Taxation (Tax Returns for Individuals, PAYGW, FBT, LCT, FTC, WET), Budgeting & Forecasting.
-
 \
 *Achievements*: 2x Graduate of the Year Award
 
 **Advanced Federal Diploma \| Hospitality Management**\
 *VATEL Switzerland*\
-Aug 2018 – Mar 2021\
+Aug 2018 – Mar 2021
+\
 *Achievements*: Triple Awards for Best Student in Swiss Taxation, Human Resources & Capstone Business Project (in charge of Finance)
 
 ------------------------------------------------------------------------
