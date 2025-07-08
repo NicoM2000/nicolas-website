@@ -32,5 +32,4 @@ Alternatively, if the asset was acquired before 21 September 1999 11:45 am (**IT
 
 ------------------------------------------------------------------------
 
-Further detail and official requirements are published on the ATO’s\
-[website](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax).
+Further details and official requirements are published on the ATO’s [website](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax).

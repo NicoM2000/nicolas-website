@@ -3,12 +3,51 @@ title: Contact
 format: html
 ---
 
-# Get in touch!
+# 📧📱 Get in touch!
 
-📧 [nicolas.moinard\@gmail.com](mailto:nicolas.moinard@gmail.com "Write me!")
+Use the form below to send me a message — I'll get back to you as soon as I can.
 
-📱 +61 434 006 507
+```{=html}
+<form action="https://formsubmit.co/nicolas.moinard@gmail.com" method="POST">
 
-<a href="https://www.linkedin.com/in/nicolas-m-02409916b" target="_blank"> <i class="fab fa-linkedin fa-2x"></i> </a> Click the icon to connect!
+  <label for="name">Your Name:</label><br>
+  <input type="text" name="name" required><br><br>
 
+  <label for="email">Your Email:</label><br>
+  <input type="email" name="email" required><br><br>
+
+  <label for="message">Your Message:</label><br>
+  <textarea name="message" rows="5" required></textarea><br><br>
+
+  <!-- Anti-spam fields -->
+  <input type="text" name="_honey" style="display:none">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+  <button type="submit" style="
+  background-color:#00bfa5;
+  color:white;
+  padding:10px 20px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;"
+  onmouseover="this.style.backgroundColor='#009e88'"
+  onmouseout="this.style.backgroundColor='#00bfa5'">
+  Send Message
+</button>
+
+
+</form>
+```
+
+---
+
+<a href="https://www.linkedin.com/in/nicolas-m-02409916b/" target="_blank" style="text-decoration: none; color: inherit;">
+  <span style="display: flex; align-items: center;">
+    <i class="fab fa-linkedin" style="font-size: 20px; margin-right: 8px;"></i>
+    Feel free to connect on LinkedIn!
+  </span>
+</a>
+
+---
 \*Open to Accounting Internships and Graduate opportunities or a good coffee chat about Excel formulas!\* ☕
