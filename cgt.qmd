@@ -11,15 +11,15 @@ Click the link above to launch the live app hosted on **shinyapps.io**.
 
 ## What is Capital Gains Tax (CGT)?
 
-CGT is levied on profit derived from the disposal of a capital assets, such as shares, real estate (investment property), or cryptocurrencies.\
+CGT is levied on profit derived from the disposal of a capital asset, such as shares, real estate (investment property), or cryptocurrencies.
+
 CGT is part of determining the taxpayer’s *income tax*, i.e., the net capital gains are part of their assessable income for the financial year.
 
-A disposal (sale) of an asset that triggers CGT is called a *CGT event*.\
-Division 104 of the **Income Tax Assessment Act 1997** lists common CGT events such as:
+A disposal (sale) of an asset that triggers CGT is called a *CGT event*. Division 104 of the **Income Tax Assessment Act (ITAA) 1997** lists common CGT events such as:
 
--   Sale or disposal of a CGT asset\
--   Trading, exchanging or swapping assets\
--   Loss, theft or destruction of asset
+-   Sale or disposal of a CGT asset
+-   Trading, exchanging or swapping assets
+-   Loss, theft or destruction of an asset
 
 ------------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ Super funds are allowed for a 33.33% discount, but companies are not eligible.
 
 ------------------------------------------------------------------------
 
-Alternatively, if the asset was acquired before 21 September 1999 11:45 am (**ITAA Sect 114.1**), the taxpayer may choose the *indexation method* which adjusts the cost base for inflation based on the Consumer Price Index (CPI) up to 30 September 1999.
+Alternatively, if the asset was acquired before 21 September 1999 11:45 am (**ITAA Sect 114.1**), the taxpayer may choose the *indexation method,* which adjusts the cost base for inflation based on the Consumer Price Index (CPI) up to 30 September 1999.
 
 ------------------------------------------------------------------------
 

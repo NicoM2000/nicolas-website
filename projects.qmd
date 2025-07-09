@@ -7,13 +7,13 @@ format: html
 
 ## Grant Thornton AU Job Simulation in Audit on Forage
 
--   Trial Balance Variance Review
+-   Trial Balance Variance Review;
 
--   Payroll Tax & Superannuation Review
+-   Payroll Tax & Superannuation Review;
 
--   Variance Commentary
+-   Variance Commentary;
 
--   Audit Completion and Reporting
+-   Audit Completion and Reporting.
 
 ## Xero Advisor and Payroll Certified
 
@@ -21,7 +21,7 @@ format: html
 
 -   Track inventory;
 
--   Generate reports
+-   Generate reports;
 
 -   Find and recode postings;
 
