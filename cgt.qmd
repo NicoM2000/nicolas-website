@@ -89,18 +89,11 @@ Where Gross Capital Gain = **Capital Proceeds** minus **Cost Base (or Reduced Co
 -   **Capital Proceeds** are the ***gross*** amount of consideration as per the sales contract, even if the taxpayer actually received less due to incidental costs. This is because those amounts (e.g. agent's fees, brokerage...) form part of the cost base. However, 6 modification rules might come into play:\
 
     1)  Market Value Substitution (S116-30): if no capital proceeds received (e.g. gift) or partially valued, the proceeds are revalued at market value as parties must be dealing at arm’s length.\
-
-    <!-- -->
-
-    (2) Apportionment Rule (S116-40): when proceeds relate to more than one CGT event (e.g. sale of land and building), they must be reasonably apportioned (no need for independent valuation).\
-
-    (3) Non-Receipt Rule (S116-45): proceeds can be reduced by unpaid amounts or bad debts if they exist.\
-
-    (4) Repaid Rule (S116-50): proceeds can be reduced if the taxpayer decides to repay part of those proceeds to the purchaser. Includes giving back property as well.\
-
-    (5) Assumption of Liability Rule (S116-55): sometimes, the purchaser may not directly pay the full amount but will assume the liability of an outstanding amount (e.g. the buyer’s loan) as consideration.
-
-    (6) Misappropriation Rule (S116-60): proceeds may be decreased if the taxpayer’s agent or employee misappropriates (theft, etc.) all or part of the proceeds.
+    2)  Apportionment Rule (S116-40): when proceeds relate to more than one CGT event (e.g. sale of land and building), they must be reasonably apportioned (no need for independent valuation).\
+    3)  Non-Receipt Rule (S116-45): proceeds can be reduced by unpaid amounts or bad debts if they exist.\
+    4)  Repaid Rule (S116-50): proceeds can be reduced if the taxpayer decides to repay part of those proceeds to the purchaser. Includes giving back property as well.\
+    5)  Assumption of Liability Rule (S116-55): sometimes, the purchaser may not directly pay the full amount but will assume the liability of an outstanding amount (e.g. the buyer’s loan) as consideration.
+    6)  Misappropriation Rule (S116-60): proceeds may be decreased if the taxpayer’s agent or employee misappropriates (theft, etc.) all or part of the proceeds.
 
 -   **Cost Base** is the sum of 5 elements\
 
@@ -138,7 +131,7 @@ This method is available to ***all taxpayers*** if:\
 If eligible, a capital gain or loss can be calculated as Capital Proceeds minus **Reduced Cost Base**. ***Each*** cost base (***excluding Element 3, Ownership Costs***) can be inflated by its applicable indexation factor:
 
 |  |
-|----|
+|------------------------------------------------------------------------|
 | $$
 Indexation\;Factor\;(3\;decimals)= \frac{CPI_{quarter\ of\ disposal}^{*}}{CPI_{quarter\ of\ acquisition}}
 $$ |
