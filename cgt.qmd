@@ -1,0 +1,178 @@
+---
+title: "CGT Calculator"
+format: 
+  html:
+    theme: darkly
+    toc: true
+    html-math-method: mathjax
+---
+
+Here is the [Capital Gains Tax Calculator](https://nicom2000.shinyapps.io/cgt_calculator/) I made.
+
+Click the link above to launch the live app hosted on **shinyapps.io**.
+
+------------------------------------------------------------------------
+
+## What is Capital Gains Tax (CGT)?
+
+CGT is levied on profit derived from the disposal of a CGT asset acquired ***on or after 20 September 1985***, where the realisation is [***not***]{.underline} undertaken in the ordinary course of carrying on a business; otherwise, the gain will be assessable under s6-5.
+
+According to s108-5(2), CGT assets encompass: land and buildings (including rental properties), shares in a company, units in a unit trust, rights and options, leases, goodwill, debts owed to a taxpayer, foreign currency, and cryptocurrencies (such as Bitcoin).
+
+The net capital gain derived from the disposal of a CGT asset is considered as statutory income and is included in the taxpayer's income tax return under Item 18 (s105-5).
+
+However, if an overall net capital loss arises, the amount is not deductible in the income year it occurred. Instead, it is ***carried forward indefinitely (quarantined) and applied to future capital gains***.
+
+A disposal (sale) of an asset that triggers CGT is called a *CGT event*. Division 104-5 identifies 56 CGT events or ways to dispose of such assets. However, two events occur in 95% of cases:
+
+-   **A1**: *Disposal of a CGT Asset*\
+    These include the change of legal ownership (sale, transfer, exchange, gift) or destruction of such assets, where timing is usually determined by the date when the contract is signed or the date of settlement in the absence of a contract.
+
+-   **C1**: *Loss or Destruction of a CGT Asset*\
+    Here, the timing will depend on whether the taxpayer receives compensation in respect to this event.
+
+    a)  If the CGT asset is insured, a CGT event occurs when the taxpayer first receives compensation/insurance payment.
+    b)  If the CGT asset is not insured, C1 occurs when the destruction or loss happens or is first discovered. *Note: capital losses are calculated as cost base minus capital proceeds, where cost base is at historical cost (not the market value at the time of destruction).*
+
+------------------------------------------------------------------------
+
+# CGT Concessions and Rollover
+
+Section 118 lists Exempt CGT Assets. Common ones include:
+
+-   s118-5(a): a car, motorcycle or similar vehicle designed to carry less than one tonne or fewer than nine passengers.
+
+-   s118-10(1): a ***collectable acquired for a market value of \$500 or less***, exclusive of GST.\
+    *Note: prior carried-forward collectable losses can only be applied against collectable gains\
+    According to s108-10(2), collectables are assets used or kept mainly for the taxpayer’s personal use or enjoyment. They include: artwork, jewellery, an antique, a coin or medallion, a rare portfolio, manuscript or book, a postage stamp or a first-day cover, interest/debt arising/option/right to acquire any of the above assets and antiques (at least 100 years old from the CGT event date).*
+
+-   s118-10(3): a ***personal-use asset acquired for \$10,000 or less***, exclusive of GST\
+    *Note: personal use capital losses are disregarded/lost. If an asset is both a personal use asset and a collectible, the latter will apply. Includes boats, furniture, electrical goods and household items (including pets).*
+
+-   s118-24: a depreciable asset disposed of after 21 September 1999 under Division 40.\
+    Instead, this will give rise to an assessable balancing adjustment (gain) or a deductible balancing adjustment (loss) under s40-285.\
+    *Note: unlike other assets, buildings are subject to the special 2.5% capital works allowance under Div 43, which is not the same as depreciation. Hence, buildings are CGT assets, provided they were acquired post-CGT introduction date.*
+
+-   s118-25: trading stock (inventory) under Division 70
+
+-   s118-37(1)(c): gambling winnings or prizes
+
+-   subdiv 118-B: an individual's main residence, usually to the extent that it has not been used for income-producing activities other than rental income, where the main residence is rented for up to six years.
+
+To avoid double taxation, the anti-overlap provision allows events that are subject to both income tax and CGT to be exempt from the latter. Furthermore, Division 152 provides several CGT reliefs when a small business is being sold.
+
+***CGT deferrals*** typically occur when there is a change in the entity owning the CGT asset without a change in the underlying ownership. However, s122-25(2) specifies several assets not subject to rollover relief, such as depreciating assets, trading stock, collectables and personal use assets. Hence, limited situations of rollover exist:
+
+-   *Disposal of an Asset by an Individual or Trustee to a Wholly-Owned Company*
+
+-   *Disposal of an Asset from a Partnership to a Company*
+
+-   *Replacement Asset Rollover Events*
+
+-   *Small Business (\<\$10M) Restructure Rollover*
+
+------------------------------------------------------------------------
+
+# Calculation of Net Capital Gains
+
+In essence, the process goes as follows
+
+*Current year gross capital gain (held for \>12 months)\
+Current year gross capital gain (held for \<12 months)\
+Less: current year gross capital loss\
+Less: previous year capital losses carried-forward\
+Equals: Notional net capital gain\
+Less: CGT Discount*
+
+Where Gross Capital Gain = **Capital Proceeds** minus **Cost Base (or Reduced Cost Base)**:
+
+-   **Capital Proceeds** are the ***gross*** amount of consideration as per the sales contract, even if the taxpayer actually received less due to incidental costs. This is because those amounts (e.g. agent's fees, brokerage...) form part of the cost base. However, 6 modification rules might come into play:\
+
+    1)  Market Value Substitution (S116-30): if no capital proceeds received (e.g. gift) or partially valued, the proceeds are revalued at market value as parties must be dealing at arm’s length.\
+
+    <!-- -->
+
+    (2) Apportionment Rule (S116-40): when proceeds relate to more than one CGT event (e.g. sale of land and building), they must be reasonably apportioned (no need for independent valuation).\
+
+    (3) Non-Receipt Rule (S116-45): proceeds can be reduced by unpaid amounts or bad debts if they exist.\
+
+    (4) Repaid Rule (S116-50): proceeds can be reduced if the taxpayer decides to repay part of those proceeds to the purchaser. Includes giving back property as well.\
+
+    (5) Assumption of Liability Rule (S116-55): sometimes, the purchaser may not directly pay the full amount but will assume the liability of an outstanding amount (e.g. the buyer’s loan) as consideration.
+
+    (6) Misappropriation Rule (S116-60): proceeds may be decreased if the taxpayer’s agent or employee misappropriates (theft, etc.) all or part of the proceeds.
+
+-   **Cost Base** is the sum of 5 elements\
+
+    (1) Acquisition costs: money paid to acquire an asset\
+    (2) Incidental costs: incurred in acquiring CGT asset + disposing of the asset (stamp duty, legal fees, real estate agent fees…)\
+    (3) Non-capital ownership costs: additional related expenditures such as interest, repairs and maintenance, council rates, land tax, body corporate and insurance that ***WERE NOT PREVIOUSLY CLAIMED*** as a deduction.
+
+    -   Applies only to non-income-producing assets acquired after 20 August 1991.
+    -   Does not qualify for indexation.\
+
+    (4) Capital Improvement Costs: costs not deductible under 8-1, 25-10 (repairs) and not depreciable under Div 40 (e.g. initial repairs, built-in closet).\
+    (5) Title Costs (not common): capital expenditure incurred to establish, preserve or defend the title to or right over the asset (legal fees).\
+    (6) Negative Element or Amounts which Reduce the Cost Base (Div 43)
+
+    -   For an income-producing property acquired on or after 7:30 pm 13 May 1997, its cost base must be reduced by the accumulated Div 43 claims made since acquisition. If before, no need to reduce. Deduction = 2.5% pa of the original construction cost of the building (=capital work 40-year allowance).
+    -   In other words, applies only if: Income-producing CGT building AND acquired on/after 13 May 1997 AND previous Div 43 claimed in taxpayer’s tax return.
+
+------------------------------------------------------------------------
+
+# The Discount Method
+
+If a CGT asset is held for **12 months or more**, the Australian Taxation Office (ATO) allows individuals and trusts to discount to 50% the capital gain (proceeds minus cost base) ***after*** offsetting any carried forward capital losses.
+
+\
+Super funds are allowed for a 33.33% discount, but companies are ***not eligible***.
+
+------------------------------------------------------------------------
+
+# The Indexation Method
+
+This method is available to ***all taxpayers*** if:\
+1) The asset was held \> 12 months; AND\
+2) Acquisition or costs were incurred between 20 September 1985 and 21 September 1999\
+\
+If eligible, a capital gain or loss can be calculated as Capital Proceeds minus **Reduced Cost Base**. ***Each*** cost base (***excluding Element 3, Ownership Costs***) can be inflated by its applicable indexation factor:
+
+|  |
+|----|
+| $$
+Indexation\;Factor\;(3\;decimals)= \frac{CPI_{quarter\ of\ disposal}^{*}}{CPI_{quarter\ of\ acquisition}}
+$$ |
+| $$
+Reduced\ Cost\ Base
+= Elements\;1 + 2 + 4 + 5 - Accumulated\ Div\ 43\ Allowance\ Claimed^{**}
+$$ |
+
+*\*If disposal is after 21 September 1999, the numerator is frozen at 68.7.*
+
+*\*\*Applies regardless of whether the property was acquired before or after 7:30 pm on 13 May 1997.*
+
+Please visit the ATO’s [website](https://www.ato.gov.au/tax-rates-and-codes/consumer-price-index) to consult the applicable CPI rate.
+
+------------------------------------------------------------------------
+
+# CGT Consequences of Death
+
+Under section 128-15, CGT assets bequeathed in the deceased's will have CGT consequences for its beneficiaries.
+
+-   **Deemed Acquisition Date and Value**
+
+    -   Inherited pre-CGT assets: deemed acquired on the date of death at their market value
+
+    -   Inherited post-CGT assets: deemed acquired on the date that the deceased originally acquired the asset at cost base or reduced cost base
+
+    -   Beneficiaries will consequently inherit the characteristics of those assets (i.e. collectable, personal use, etc.), but different rules apply regarding the deceased’s main residence
+
+-   **Disposal of Inherited CGT Assets**
+
+    -   If an inherited pre-CGT asset is disposed of within 12 months of the date of death, the beneficiary does not benefit from indexation or the 50% discount, as the deemed acquisition date is the date of death.
+
+    -   If an inherited post-CGT asset is disposed of within 12 months from the date the deceased originally acquired the asset, then the beneficiary does not benefit from indexation and/or discount
+
+------------------------------------------------------------------------
+
+Further details and official requirements are published on the ATO’s [website](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax).

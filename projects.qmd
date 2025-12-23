@@ -1,0 +1,64 @@
+---
+title: Certifications
+format: html
+---
+
+# [Accounting]{.underline}
+
+## Grant Thornton AU Job Simulation in Audit on Forage
+
+-   Trial Balance Variance Review;
+
+-   Payroll Tax & Superannuation Review;
+
+-   Variance Commentary;
+
+-   Audit Completion and Reporting.
+
+## Xero Advisor and Payroll Certified
+
+-   Setting up a new or existing business;
+
+-   Track inventory;
+
+-   Generate reports;
+
+-   Find and recode postings;
+
+-   Manual journals;
+
+-   Manage fixed assets;
+
+-   Manage and troubleshoot Payroll activities;
+
+-   Xero Projects.
+
+# [Data Analytics]{.underline}
+
+## KPMG AU Data Analytics Job Simulation on Forage
+
+-   Completed a simulation focused on advising a client on customer targeting;
+
+-   Assessed data quality and completeness in preparation for analysis;
+
+-   Analysed data to target high-value customer demographics and attributes;
+
+-   Developed dashboards to communicate findings with visuals.
+
+## Google Data Analytics Professional Certificate
+
+-   Data Analytics Project Management;
+
+-   Data Quality Assessment;
+
+-   Data Cleaning;
+
+-   Data Visualisation;
+
+-   Tableau;
+
+-   SQL (Google BigQuery);
+
+-   R programming;
+
+-   Descriptive Statistics.

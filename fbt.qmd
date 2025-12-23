@@ -1,0 +1,62 @@
+---
+title: "fbt"
+format: html
+---
+
+*Currently under development...*
+
+Here is the Fringe Benefit Calculator I made. At this stage, only fringes followed by an asterisk '\*' are covered by this calculator.
+
+Click the link above to launch the live app hosted on **shinyapps.io**.
+
+------------------------------------------------------------------------
+
+## What is Fringe Benefit Tax (FBT)?
+
+-   Fringe Benefit Tax (FBT) is levied on any [*non-cash benefit*]{.underline} that employers (or employers’ associates/subsidiaries) provide to [*employees*]{.underline} (or employees’ associates) used for [*private purposes*]{.underline}.
+
+    -   Employees for FBT purposes include: company directors, officeholders, employees, and recipients of compensation payments
+
+    -   Associates of employees are: their relatives (S318 ITAA36) + any other person (friend, flatmate…).
+
+-   FBT exclusions
+
+    -   Payments of: salary/wages, cash allowances (except a living-away-from-home allowance), superannuation, benefits under Div83A scheme, ETP and specific exemptions under FBTAA (1986)
+
+    -   Payments to non-employees: genuine contractors, clients, shareholders and suppliers
+
+-   Common fringe benefits include: company car, home electricity/home telephone bills, private health insurance, children's school fees, private holiday, low or interest-free loans, entertainment (meals, free concert ticket…)
+
+-   Benefits are grouped into the 12 categories
+
+    1.  Car fringe \*
+    2.  Debt waiver fringe
+    3.  Loan fringe \*
+    4.  Expense payment fringe \*
+    5.  Housing fringe
+    6.  Living-away-from-home allowance fringe
+    7.  Board fringe
+    8.  Meal entertainment fringe
+    9.  Tax-exempt body entertainment fringe
+    10. Property fringe \*
+    11. Car parking fringe
+    12. Residual fringe (i.e. benefits that do not fall under any of the other eleven categories)
+
+------------------------------------------------------------------------
+
+## **FBT Administration**
+
+-   The FBT regime runs from 1 April to 31 March
+-   FBT is a self-assessed return prepared by the employer, and is a separate form from BAS and IAS
+-   If self-prepared, FBT must be lodged and paid by **21 May**, or **25 June** if lodged by a tax agent
+-   If the taxpayer's FBT is less than \$3,000, the liability is settled in one annual payment by one of the above due dates.
+-   If more than the threshold, the ATO requires FBT to be paid in quarterly instalments plus an annual payment of any outstanding amount, in which case Label F1 of the taxpayer's BAS will be shown.
+-   F1 is the annual FBT estimate provided by the ATO based on the taxpayer's prior FBT assessment, and it is pre-printed on the Activity Statement. Taxpayers can vary (adjust) their quarterly instalments based on their updated estimate for the FBT year ending 31 March. The ATO provides several reasons for making these variations.
+-   FBT rate typically corresponds to the highest marginal tax rate plus Medicare levy. A **47%** rate currently applies across the 31 March 2022 to 31 March 2026 FBT years.
+-   Section 136(1) of the *Act* broadly defines a benefit to include "any right, privilege, service or facility", which encompasses anything of value provided as part of or in lieu of a salary package (except for salary and wages), which is designed to reduce the income tax liability of the employee.
+-   The taxable value of a fringe benefit must be grossed up before calculating the fringe benefit tax. Grossing up helps to equate non-cash benefits with salary levels, enabling the ATO to tax these benefits as if they were income. This process allows for a fair comparison between different types of compensation.
+-   The gross-up factor depends on whether the employer can claim GST credit related to the cost of providing the benefit. Type 1 fringes are GST credit claimable, whereas Type 2 fringes are those that are not Type 1 benefits (i.e., either the benefit is GST-free or the employer is not eligible to claim an input tax).
+
+------------------------------------------------------------------------
+
+Further details and official requirements are published on the ATO’s [website](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax).

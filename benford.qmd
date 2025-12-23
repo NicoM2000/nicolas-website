@@ -1,0 +1,101 @@
+---
+title: "Benford's Law Anomaly Detector"
+format: 
+  html:
+    theme: darkly
+    toc: true
+    html-math-method: mathjax
+---
+
+Benford's Law is often seen as the go-to forensic accounting tool in fraud detection.
+
+📈 I built this interactive Shiny app to let users:
+
+-   Upload their own .csv files (max. 500MB) \[*note: please be patient, upload time is slow...\]*
+-   Select a numeric column to analyse
+-   Automatically extract the first digits
+-   Compare the digit distribution to Benford’s expected probabilities
+-   Flag anomalies using a $\chi^2$ (Chi-squared) test (checks whether the difference between predicted results and actual values is statistically significant)
+
+Here is the [Benford's Law Anomaly Detector](https://nicom2000.shinyapps.io/benford/) I made.
+
+Click the link above to launch the live app hosted on **shinyapps.io**.
+
+------------------------------------------------------------------------
+
+# 🔍What is Benford’s Law?
+
+Although Simon Newcomb first noted the mathematical property, today's widely known **Benford’s Law** is a curious statistical principle used in **anomaly detection**. It reveals that in many real-world datasets, small leading digits (i.e. *1*) are counter-intuitively more likely to occur than large digits. This pattern seems to be present in a wide range of cases, ranging from:
+
+-   🗳 election results;
+
+-   🏡 street addresses;
+
+-   📊 financial data;
+
+-   ⚰️ mortality statistics;
+
+-   🧪 to molecular weights.
+
++-----------------------------------------------------------------------------------------------------------------+
+| ## 📐 Generalised Benford’s Law: The Formula Behind the Pattern                                                 |
++-----------------------------------------------------------------------------------------------------------------+
+| The probability that a number begins with digit *d* (from 1 through 9) is:                                      |
++-----------------------------------------------------------------------------------------------------------------+
+| $$                                                                                                              |
+| P(d) = \log_{10} \left(1 + \frac{1}{d} \right)                                                                  |
+| $$                                                                                                              |
++-----------------------------------------------------------------------------------------------------------------+
+| Where:                                                                                                          |
++-----------------------------------------------------------------------------------------------------------------+
+| -   $P(d)$ is the probability that the first digit is $d$                                                       |
+|                                                                                                                 |
+| -   The logarithm is base-10                                                                                    |
+|                                                                                                                 |
+| -   This formula shows why **1** appears about **30.1%** of the time, while **9** only shows up around **4.6%** |
++-----------------------------------------------------------------------------------------------------------------+
+
+# 📊 Benford’s Law Expected Distribution
+
+The plot below shows the probability distribution predicted by Benford’s Law for the first digit (1–9). As you can see, the digit 1 appears \~30% of the time, while 9 appears less than 5%.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(ggplot2)
+library(scales)
+library(plotly)
+
+benford <- data.frame(
+  digit = 1:9,
+  probability = log10(1 + 1 / (1:9))
+)
+
+benford$label <- paste0(sprintf("%.2f", benford$probability * 100), "%")
+
+# Build the static ggplot
+p <- ggplot(benford, aes(x = factor(digit), y = probability, fill = factor(digit))) +
+  geom_col(show.legend = FALSE) +
+  geom_text(aes(label = label), vjust = -0.3, color = "#FFFF33", size = 5, fontface = "bold") +
+  scale_y_continuous(labels = percent_format(accuracy = 1), expand = expansion(mult = c(0, 0.1))) +
+  scale_fill_manual(values = c("#08306B", "#08519C", "#2171B5", "#4292C6", "#6BAED6", "#9ECAE1", "#BFD3E6", "#AFC6DC", "#9EBBD2")) +
+  labs(
+    title = "Benford's Law Probability Distribution",
+    x = "Leading Digit",
+    y = "Probability"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.background = element_rect(fill = "#222222", color = NA),
+    panel.background = element_rect(fill = "#222222", color = NA),
+    panel.grid.major = element_line(color = "#444444"),
+    panel.grid.minor = element_line(color = "#333333"),
+    axis.text = element_text(color = "#DDDDDD"),
+    axis.title = element_text(color = "#FFFFFF"),
+    plot.title = element_text(color = "#FFFFFF", face = "bold")
+  )
+
+# Convert to interactive plot
+result <- ggplotly(p) %>% layout(showlegend = FALSE)
+result
+
+```

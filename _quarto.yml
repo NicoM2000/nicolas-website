@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Nicolas Moinard"
+  description: "Emerging Accountant | Qualified Bookkeeper | Trilingual"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Resume"
+        href: resume.qmd
+      - text: "Certifications"
+        href: projects.qmd
+      - text: "CGT Calculator"
+        href: cgt.qmd
+      - text: "FBT Calculator"
+        href: fbt.qmd
+      - text: "Benford's Law Anomaly Detector"
+        href: benford.qmd
+      - text: "Contact"
+        href: contact.qmd
+      
+
+format:
+  html:
+    theme: darkly
+    toc: true
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
