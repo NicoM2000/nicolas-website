@@ -11,11 +11,11 @@ Benford's Law is often seen as the go-to forensic accounting tool in fraud detec
 
 📈 I built this interactive Shiny app to let users:
 
--   Upload their own .csv files (max. 500MB) \[*note: please be patient, upload time is slow...\]*
--   Select a numeric column to analyse
--   Automatically extract the first digits
--   Compare the digit distribution to Benford’s expected probabilities
--   Flag anomalies using a $\chi^2$ (Chi-squared) test (checks whether the difference between predicted results and actual values is statistically significant)
+- Upload their own .csv files (max. 500MB) \[*note: please be patient, upload time is slow...\]*
+- Select a numeric column to analyse
+- Automatically extract the first digits
+- Compare the digit distribution to Benford’s expected probabilities
+- Flag anomalies using a $\chi^2$ (Chi-squared) test (checks whether the difference between predicted results and actual values is statistically significant)
 
 Here is the [Benford's Law Anomaly Detector](https://nicom2000.shinyapps.io/benford/) I made.
 
@@ -27,33 +27,33 @@ Click the link above to launch the live app hosted on **shinyapps.io**.
 
 Although Simon Newcomb first noted the mathematical property, today's widely known **Benford’s Law** is a curious statistical principle used in **anomaly detection**. It reveals that in many real-world datasets, small leading digits (i.e. *1*) are counter-intuitively more likely to occur than large digits. This pattern seems to be present in a wide range of cases, ranging from:
 
--   🗳 election results;
+- 🗳 election results;
 
--   🏡 street addresses;
+- 🏡 street addresses;
 
--   📊 financial data;
+- 📊 financial data;
 
--   ⚰️ mortality statistics;
+- ⚰️ mortality statistics;
 
--   🧪 to molecular weights.
+- 🧪 to molecular weights.
 
-+-----------------------------------------------------------------------------------------------------------------+
-| ## 📐 Generalised Benford’s Law: The Formula Behind the Pattern                                                 |
-+-----------------------------------------------------------------------------------------------------------------+
-| The probability that a number begins with digit *d* (from 1 through 9) is:                                      |
-+-----------------------------------------------------------------------------------------------------------------+
-| $$                                                                                                              |
-| P(d) = \log_{10} \left(1 + \frac{1}{d} \right)                                                                  |
-| $$                                                                                                              |
-+-----------------------------------------------------------------------------------------------------------------+
-| Where:                                                                                                          |
-+-----------------------------------------------------------------------------------------------------------------+
-| -   $P(d)$ is the probability that the first digit is $d$                                                       |
-|                                                                                                                 |
-| -   The logarithm is base-10                                                                                    |
-|                                                                                                                 |
-| -   This formula shows why **1** appears about **30.1%** of the time, while **9** only shows up around **4.6%** |
-+-----------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+|                                                                                                               |
++===============================================================================================================+
+| ## 📐 Generalised Benford’s Law: The Formula Behind the Pattern                                               |
++---------------------------------------------------------------------------------------------------------------+
+| The probability that a number begins with digit *d* (from 1 through 9) is:                                    |
++---------------------------------------------------------------------------------------------------------------+
+| $$P(d) = \log_{10} \left(1 + \frac{1}{d} \right)$$                                                            |
++---------------------------------------------------------------------------------------------------------------+
+| Where:                                                                                                        |
++---------------------------------------------------------------------------------------------------------------+
+| - $P(d)$ is the probability that the first digit is $d$                                                       |
+|                                                                                                               |
+| - The logarithm is base-10                                                                                    |
+|                                                                                                               |
+| - This formula shows why **1** appears about **30.1%** of the time, while **9** only shows up around **4.6%** |
++---------------------------------------------------------------------------------------------------------------+
 
 # 📊 Benford’s Law Expected Distribution
 

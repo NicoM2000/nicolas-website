@@ -5,17 +5,19 @@ format: html
 
 # Hi, I’m Nicolas Moinard 👋
 
-Welcome to my website! I’m an Accounting student passionate about financial analysis, utilising my Excel magic to clean spreadsheets, and adding value to businesses through numbers.
+Welcome to my website! I’m an Accounting student with a passion to contribute to the industry, learning and reflecting upon the impact of legislation on business, utilising my Excel magic to clean spreadsheets, and adding value to businesses through numbers.
 
 ------------------------------------------------------------------------
 
 ## Quick Profile
 
--   🎓 Bachelor of Business (Accountancy) \@ QUT (mid-2026)
+-   🎓 Bachelor of Business (Honours) (Accountancy) \@ QUT (mid-2027)
 
--   🤝 Vice-President – QUT Accountancy Student Association
+-   🤝 Vice-President – QUT Accountancy Students' Association
 
--   📊 Advanced Excel \| Xero Advisor \| R (basic)
+-   🎖️ CA ANZ Prize 2025 \| 4x Dean's List \| Graduate of the Year Award
+
+-   📊 Advanced Excel \| Xero Level 3 Certified \| R (programming)
 
 -   🍷 Trained in Luxury Hospitality Management in Switzerland
 
