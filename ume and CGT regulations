@@ -1,0 +1,24 @@
+warning: in the working copy of '.Rhistory', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/benford.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/cgt.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/contact.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/fbt.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/projects.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/resume.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/search.json', LF will be replaced by CRLF the next time Git touches it
+ benford.qmd        |  64 [32m++++++++++++++[m[31m--------------[m
+ cgt.qmd            | 109 [32m++++++++++++++++++++++++[m[31m------------------------[m
+ docs/benford.html  |   6 [32m+[m[31m--[m
+ docs/cgt.html      |   2 [32m+[m[31m-[m
+ docs/contact.html  |   2 [32m+[m[31m-[m
+ docs/fbt.html      |   6 [32m+[m[31m--[m
+ docs/index.html    |   2 [32m+[m[31m-[m
+ docs/projects.html |   2 [32m+[m[31m-[m
+ docs/resume.html   |   2 [32m+[m[31m-[m
+ docs/search.json   |   6 [32m+[m[31m--[m
+ fbt.qmd            |  60 [32m+++++++++++++[m[31m--------------[m
+ index.qmd          |   6 [32m+[m[31m--[m
+ projects.qmd       |  48 [32m++++++++++[m[31m-----------[m
+ resume.qmd         | 120 [32m+++++++++++++++++++++++++++[m[31m--------------------------[m
+ 14 files changed, 219 insertions(+), 216 deletions(-)
