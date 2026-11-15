@@ -159,7 +159,7 @@ This method is available to ***all taxpayers*** if:\
 If eligible, a capital gain or loss can be calculated as Capital Proceeds minus **Reduced Cost Base**. ***Each*** cost base (***excluding Element 3, Ownership Costs***) can be inflated by its applicable indexation factor:
 
 |  |
-|------------------------------------------------------------------------|
+|----|
 |  |
 | $$Indexation\;Factor\;(3\;decimals)= \frac{CPI_{quarter\ of\ disposal}^{*}}{CPI_{quarter\ of\ acquisition}}$$ |
 |  |
